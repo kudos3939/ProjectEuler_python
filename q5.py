@@ -13,6 +13,7 @@ def q5():
         smallest_multiple *= biggest_power
     print smallest_multiple
 
+
 def find_primes(max_number):
     prime_numbers = []
     for x in range(2, max_number):
