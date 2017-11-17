@@ -17,8 +17,8 @@ def q5():
 def find_primes(max_number):
     prime_numbers = []
     for x in range(2, max_number):
-        temp_arary = [x % p for p in prime_numbers]
-        if 0 not in temp_arary:
+        temp_array = [x % p for p in prime_numbers]
+        if 0 not in temp_array:
             prime_numbers.append(x)
     return prime_numbers
 
