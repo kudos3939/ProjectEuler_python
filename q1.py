@@ -12,7 +12,7 @@ def q1():
     for x in three_five:
         sum += x
 
-    print(sum)
+    print sum
 
 
 q1()
