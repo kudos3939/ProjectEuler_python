@@ -1,13 +1,12 @@
 #!/usr/bin/python
-# coding: UTF-8
+# coding: utf-8
 
 
 # 1000未満の全ての3の倍数と5の倍数の合計を出力します。
 def q1():
-    maximum = 1000  # 最大値
     result = 0  # 結果を格納するための変数
     # 0から999まで順番にxに代入していきます。
-    for x in range(0, maximum):
+    for x in range(0, 1000):  # 一つ目の引数の数字から2つ目の引数の数字の数だけ以下を繰り返します。
         # xが3の倍数、または5の倍数であるかチェックします。
         if x % 3 == 0 or x % 5 == 0:
             result += x  # チェックがTrueを返したら変数に加えます。
