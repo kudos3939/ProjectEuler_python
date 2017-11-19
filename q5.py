@@ -1,5 +1,9 @@
 #!/usr/bin/python
 # coding: utf-8
+from util import is_divisible  # モジュールをインポートします。
+"""
+※ 実際にコードを試してみたい方はq5.pyとutil.pyを同じディレクトリに配置してください。
+"""
 
 
 # 1から20全ての数字の最小公倍数を求めます。
@@ -19,10 +23,9 @@ def q5():
 
 # 与えられた引数までの素数を求め、配列を返します。
 def find_primes(max_number):
-    prime_numbers = []
-    for x in range(2, max_number):
-        temp_array = [x % p for p in prime_numbers]
-        if 0 not in temp_array:
+    prime_numbers = [2]  # 空だとis_divisibleを呼び出した時エラーになるので2を予め入れています。
+    for x in range(3, max_number):  # 0からだと0と1も入ってしまい、2がダブります。
+        if is_divisible(x, prime_numbers):  # importした関数を呼び出しています。
             prime_numbers.append(x)
     return prime_numbers
 
