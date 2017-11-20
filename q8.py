@@ -2,7 +2,7 @@
 # coding: utf-8
 
 
-#1000桁の数字(q8_number)からそれぞれの桁をかけた数が最大になる13桁を求めます。
+# 1000桁の数字(q8_number)からそれぞれの桁をかけた数が最大になる13桁を求めます。
 def q8():
     f = open("q8_number", 'r')  # q8_numberのファイルを読み込むオブジェクトを作ります。
     the_number = f.read()  # q8_numberを変数に代入します(型はstrです)。
