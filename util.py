@@ -19,7 +19,7 @@ def create_wheel(maximum):
     return primes + wheel
 
 
-def sieve_prime(*wheel):
+def sieve_prime(wheel):
     prime_numbers = []
     wheel = deque(wheel)
     while wheel[0] < sqrt(wheel[-1]):
@@ -33,4 +33,4 @@ def sieve_prime(*wheel):
 
 def find_primes(maximum):
     wheel = create_wheel(maximum)
-    return sieve_prime(*wheel)
+    return sieve_prime(wheel)
