@@ -2,6 +2,7 @@
 # coding: utf-8
 
 
+# コメントは後日〜
 def q13():
     f = open("q13_number", "r")
     numbers = f.read().split()
