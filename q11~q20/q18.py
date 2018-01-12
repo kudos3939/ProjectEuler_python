@@ -4,7 +4,7 @@ from collections import deque
 
 
 def q18():
-    f = open('q67_number', 'r')
+    f = open('q18_number', 'r')
     # 数字をノード化しデックに納めます。
     num_of_line = 0
     nodes = []
@@ -27,13 +27,10 @@ def q18():
 
 
 class Node:
-    __value = 0
-    __path = None
-    __total_value = 0
-
     def __init__(self, value):
         self.__value = value
         self.__total_value = value
+        self.__path = None
 
     def get_value(self):
         return self.__total_value
@@ -45,5 +42,6 @@ class Node:
 
     def __repr__(self):
         return str(self.__value)
+
 
 q18()
