@@ -20,16 +20,16 @@ def q21():
 
 
 def sum_of_proper_divisor(num):
-    divisors = []
+    divisors = set()
     for n in range(1, int(floor(sqrt(num) + 1))):
         if num % n == 0:
-            divisors.append(n)
+            divisors.add(n)
     rest_divisors = [num / x for x in divisors]
     for r in rest_divisors:
         if r not in divisors:
-            divisors.append(r)
+            divisors.add(r)
     divisors.remove(num)
-    return reduce(lambda a, b: a+b, divisors)
+    return sum(divisors)
 
 
 q21()
