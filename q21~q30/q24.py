@@ -8,8 +8,6 @@ def q24():
     perms = []
     find_perms(str_numbers, '', perms)
 
-    perms.sort()
-
     print(perms[999999])
 
 
