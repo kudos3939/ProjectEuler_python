@@ -1,22 +1,25 @@
 #!/usr/bin/python
 # coding: utf-8
+import math
 
 
 def q24():
-    numbers = range(10)
-    str_numbers = [str(n) for n in numbers]
-    perms = []
-    find_perms(str_numbers, '', perms)
+    index = 999999
+    pool = list(range(10))
+    digit = []
 
-    print(perms[999999])
+    reminder = (-1, index)
+    while len(pool) is not 0:
+        for n in range(len(pool)):
+            temp = index - n * math.factorial(len(pool)-1)
+            if reminder[1] >= temp >= 0:
+                reminder = (pool[n], temp)
+            elif temp < 0:
+                break
+        index = reminder[1]
+        pool = [x for x in pool if x != reminder[0] in pool]
+        digit.append(reminder[0])
 
-
-def find_perms(nums, digits, perms=[]):
-    if len(nums) is 0:
-        perms.append(digits)
-    for x in nums:
-        new_nums = [r for r in nums if r != x in nums]
-        find_perms(new_nums, digits + x, perms)
-
+    print(digit)
 
 q24()
