@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import util
+import time
 
 
 def q27(an, bn):
@@ -21,6 +22,8 @@ tested = [x for x in primes if x <= 1000]
 tested += [-x for x in tested]
 for a in tested:
     for b in tested:
+        if a < 0 and b < 0:
+            continue
         length = q27(a, b)
         if length > longest:
             longest = length
