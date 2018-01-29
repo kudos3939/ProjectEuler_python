@@ -1,5 +1,5 @@
-#!/usr/bin/python
-# coding: utf-8
+#!/usr/local/bin/python3
+# writing with python3
 import math
 
 

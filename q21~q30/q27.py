@@ -1,6 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import util
-import time
 
 
 def q27(an, bn):
