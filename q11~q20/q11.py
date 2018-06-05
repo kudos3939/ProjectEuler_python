@@ -5,7 +5,7 @@
 # q11_numberの20*20の行列から縦横斜めで隣り合う4つの数字の積が最も大きくなる組み合わせを求めます。
 def q11():
     matrix = []
-    f = open('q11_number', 'r')
+    f = open('../etc/q11_number', 'r')
     for line in f.readlines():
         matrix.append(line.split())  # 一つの行をスペースで区切ってそれぞれ配列に入れています。
     # リストのリストなので、mapを二重にしています。

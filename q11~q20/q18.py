@@ -4,7 +4,7 @@ from collections import deque
 
 
 def q18():
-    f = open('q18_number', 'r')
+    f = open('../etc/q18_number', 'r')
     # 数字をノード化しデックに納めます。
     num_of_line = 0
     nodes = []

@@ -4,7 +4,7 @@
 
 # コメントは後日〜
 def q13():
-    f = open("q13_number", "r")
+    f = open("../etc/q13_number", "r")
     numbers = f.read().split()
 
     result = reduce(lambda a, b: str_sum(a, b), numbers)
